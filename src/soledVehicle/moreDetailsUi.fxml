@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="1000.0" stylesheets="@../util/darkTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soledVehicle.moreDetailsController">
+   <center>
+      <VBox prefHeight="400.0" prefWidth="287.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="83.0" prefWidth="389.0" text="Vehicle information." underline="true">
+               <font>
+                  <Font name="Agency FB" size="30.0" />
+               </font>
+            </Label>
+            <GridPane prefHeight="356.0" prefWidth="391.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <VBox>
+                     <children>
+                        <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="104.0" text="Vehicle Name:-">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="27.0" text="Vehicle Type:-">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="61.0" text="Chasis no#:-">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="78.0" text="Engine no#:-">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="30.0" prefHeight="17.0" prefWidth="66.0" text="Errors:-">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="77.0" text="Total Price:-">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="124.0" prefWidth="200.0" text="Description of Vehicle:-">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label text="Date Of Buy">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="337.0" prefWidth="198.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label fx:id="Vname" prefHeight="17.0" prefWidth="141.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="Vtype" prefHeight="17.0" prefWidth="140.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="chasis" prefHeight="17.0" prefWidth="122.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="engine" prefHeight="17.0" prefWidth="91.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="error" prefHeight="17.0" prefWidth="130.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="price" layoutX="20.0" layoutY="30.0" prefHeight="17.0" prefWidth="135.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="Vdescription" layoutX="20.0" layoutY="77.0" prefHeight="17.0" prefWidth="134.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="dateBuyed" prefWidth="200.0" text="Description of Purchaser:">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox prefHeight="365.0" prefWidth="248.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="29.0" prefWidth="189.0" text="Last Onwer Information" underline="true">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="Agency FB" size="24.0" />
+               </font>
+            </Label>
+            <GridPane prefHeight="400.0" prefWidth="175.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <VBox prefHeight="351.0" prefWidth="94.0">
+                     <children>
+                        <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="66.0" text="Name:">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="27.0" text="NIC no#">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="61.0" text="Address:">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="78.0" text="Phone no#">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="241.0" text="Description:">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="218.0" text="Profit you made:">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="80.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label fx:id="lName" prefHeight="17.0" prefWidth="52.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lNic" prefHeight="17.0" prefWidth="55.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="address" prefHeight="17.0" prefWidth="43.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lphone" prefHeight="17.0" prefWidth="62.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="ldescription" prefHeight="17.0" prefWidth="55.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="revenue" layoutX="20.0" layoutY="218.0" prefHeight="17.0" prefWidth="55.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="80.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="365.0" prefWidth="293.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="83.0" prefWidth="389.0" text="Soled To" underline="true">
+               <font>
+                  <Font name="Agency FB" size="30.0" />
+               </font>
+            </Label>
+            <GridPane prefHeight="356.0" prefWidth="391.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <VBox prefHeight="337.0" prefWidth="97.0">
+                     <children>
+                        <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="104.0" text="Purchaser Name :">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="27.0" text="Purchaser Nic no#">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="61.0" text="Phone no#:">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="78.0" text="Address:">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="77.0" text="Soled In:">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="124.0" text="Description of Purchaser:">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label layoutX="20.0" layoutY="205.0" text="Date Of soled">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="353.0" prefWidth="281.0" GridPane.columnIndex="1">
+                     <children>
+                        <Label fx:id="pName" prefHeight="17.0" prefWidth="141.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="pNic" prefHeight="17.0" prefWidth="140.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="pPhone" prefHeight="17.0" prefWidth="122.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="pAddress" prefHeight="17.0" prefWidth="91.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="salePrice" layoutX="20.0" layoutY="30.0" prefHeight="17.0" prefWidth="135.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="Pdescription" layoutX="20.0" layoutY="77.0" prefHeight="17.0" prefWidth="134.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="dateSoled" layoutX="20.0" layoutY="205.0" prefHeight="17.0" prefWidth="134.0" text="Label">
+                           <VBox.margin>
+                              <Insets bottom="20.0" left="10.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </right>
+   <bottom>
+      <JFXButton fx:id="closebtn" onAction="#close" text="Close" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </BorderPane.margin>
+      </JFXButton>
+   </bottom>
+</BorderPane>

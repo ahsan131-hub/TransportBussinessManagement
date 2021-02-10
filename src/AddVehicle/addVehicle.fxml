@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="552.0" prefWidth="798.0" stylesheets="@../util/darkTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AddVehicle.AddVehicleController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="506.0" prefWidth="221.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="84.0" prefWidth="225.0" text="Last owner Details" underline="true">
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="lastOwnerName" labelFloat="true" promptText="Last Owner Name">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="nic" labelFloat="true" layoutX="10.0" layoutY="10.0" promptText="NIC no#">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="address" labelFloat="true" layoutX="10.0" layoutY="35.0" promptText="address">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="phone" labelFloat="true" layoutX="10.0" layoutY="60.0" promptText="Phone no#">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextArea fx:id="ownerDescription" prefHeight="74.0" prefWidth="201.0" promptText="description about the last owner">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" right="10.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextArea>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="400.0" prefWidth="386.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="75.0" prefWidth="465.0" text="Vehicle Information" textAlignment="CENTER" underline="true">
+                     <font>
+                        <Font name="System Bold Italic" size="35.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="vehicleName" labelFloat="true" promptText="Vehicle Name ">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="vehicleType" labelFloat="true" promptText="Type">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="vehicleNo" labelFloat="true" promptText="number">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="chasisNo" labelFloat="true" promptText="chasis no#">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="engineNo" labelFloat="true" layoutX="10.0" layoutY="85.0" promptText="engine no#">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="vehicleError" labelFloat="true" layoutX="10.0" layoutY="185.0" promptText="Major errors in paper or  in vehicle ">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="price" labelFloat="true" layoutX="30.0" layoutY="346.0" promptText="Total Price">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextArea fx:id="vehicleDescription" prefHeight="54.0" prefWidth="309.0" promptText="Description about vehicle">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="30.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                  </JFXTextArea>
+               </children>
+            </VBox>
+         </center>
+         <right>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="65.0" prefWidth="101.0" text="Images" textAlignment="CENTER" underline="true">
+                     <font>
+                        <Font name="System Bold Italic" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="72.0" prefWidth="181.0" text="Use Drag and Drop to add Images. ">
+                     <font>
+                        <Font name="Agency FB" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Label>
+                  <ImageView fx:id="imageView" fitHeight="113.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="imageview2" fitHeight="123.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="imageview3" fitHeight="125.0" fitWidth="200.0" onDragDropped="#handleDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" />
+                  <Label layoutX="10.0" layoutY="75.0" prefHeight="72.0" prefWidth="181.0" text="Drop above">
+                     <font>
+                        <Font name="Agency FB" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </right>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="save" buttonType="RAISED" onAction="#loadSaveAction" text="Add This Vehicle">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="cancel" buttonType="RAISED" onAction="#loadCancelAction" text="Cancel">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

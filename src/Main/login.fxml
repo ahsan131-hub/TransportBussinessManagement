@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane styleClass="glyph-icon" stylesheets="@../util/darkTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.loginController">
+   <children>
+      <JFXTextField fx:id="userName" labelFloat="true" layoutX="35.0" layoutY="96.0" prefHeight="37.0" prefWidth="200.0" promptText="User Name ">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" labelFloat="true" layoutX="35.0" layoutY="145.0" onAction="#loadLoginAction" prefHeight="37.0" prefWidth="200.0" promptText="password">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </JFXPasswordField>
+      <HBox alignment="CENTER" layoutX="2.0" layoutY="199.0" prefHeight="45.0" prefWidth="266.0">
+         <children>
+            <JFXButton fx:id="loginButton" onAction="#loadLoginAction" prefHeight="25.0" prefWidth="83.0" text="Login">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+               </HBox.margin>
+               <styleClass>
+                  <String fx:value="login-button" />
+                  <String fx:value="login-button" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton onAction="#loadCancelAction" prefHeight="25.0" prefWidth="76.0" text="Cancel">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+               </HBox.margin>
+               <styleClass>
+                  <String fx:value="login-button" />
+                  <String fx:value="login-button" />
+               </styleClass>
+            </JFXButton>
+         </children>
+      </HBox>
+      <FontAwesomeIconView glyphName="KEY" layoutX="19.0" layoutY="170.0" size="20" styleClass="glyph-icon" />
+      <FontAwesomeIconView glyphName="USER" layoutX="22.0" layoutY="132.0" size="20" styleClass="glyph-icon" />
+      <FontAwesomeIconView glyphName="LOCK" layoutX="115.0" layoutY="86.0" size="60" />
+   </children>
+</AnchorPane>

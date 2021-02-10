@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../util/darkTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rentAvehicle.PrintReceiptController">
+   <children>
+      <BorderPane prefHeight="529.0" prefWidth="628.0">
+         <top>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="53.0" prefWidth="600.0">
+                     <children>
+                        <VBox prefHeight="78.0" prefWidth="155.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="116.0" text="Dgital Receipt No#">
+                                 <VBox.margin>
+                                    <Insets right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="digReceipt" layoutX="10.0" layoutY="20.0" prefHeight="17.0" prefWidth="116.0" text="A12345">
+                                 <VBox.margin>
+                                    <Insets right="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label prefHeight="17.0" prefWidth="122.0" text="Manual receipt no#" />
+                              <Label fx:id="manualreceipt" layoutX="10.0" layoutY="54.0" prefHeight="17.0" prefWidth="88.0" text="no" />
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <Label prefHeight="75.0" prefWidth="291.0" text="Book vehicle " underline="true">
+                           <font>
+                              <Font name="Agency FB" size="46.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label prefHeight="17.0" prefWidth="77.0" text="Date:" />
+                        <Label fx:id="datePicker" prefHeight="17.0" prefWidth="118.0" text="date" />
+                     </children>
+                  </HBox>
+                  <Separator prefWidth="200.0" />
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <HBox BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <VBox prefHeight="347.0" prefWidth="430.0">
+                     <children>
+                        <FlowPane prefHeight="58.0" prefWidth="375.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="170.0" text="Driver Name :" />
+                              <Label fx:id="DriverName" prefHeight="35.0" prefWidth="135.0" text="Name " />
+                              <Label prefHeight="17.0" prefWidth="178.0" text="Vehicle No" />
+                              <Label fx:id="vehicleText" layoutX="10.0" layoutY="59.0" prefHeight="17.0" prefWidth="94.0" text="no;" />
+                           </children>
+                        </FlowPane>
+                        <TextFlow prefHeight="42.0" prefWidth="375.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="106.0" text="Client Name ">
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="clientName" prefHeight="17.0" prefWidth="152.0" text="CName">
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding>
+                              </Label>
+                              <Separator prefHeight="17.0" prefWidth="352.0" />
+                           </children>
+                        </TextFlow>
+                        <HBox prefHeight="8.0" prefWidth="367.0">
+                           <children>
+                              <Label fx:id="from" prefHeight="17.0" prefWidth="94.0" text="From" />
+                              <Label prefHeight="35.0" prefWidth="14.0" text="-&gt;" />
+                              <Label fx:id="destination" prefHeight="17.0" prefWidth="136.0" text="To" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <FlowPane>
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="99.0" text="Weight and Stuf">
+                                 <FlowPane.margin>
+                                    <Insets bottom="10.0" left="5.0" right="10.0" top="5.0" />
+                                 </FlowPane.margin>
+                              </Label>
+                              <Label fx:id="stuff" prefHeight="17.0" prefWidth="184.0" text="wStuff">
+                                 <FlowPane.margin>
+                                    <Insets bottom="10.0" left="5.0" right="10.0" top="5.0" />
+                                 </FlowPane.margin>
+                              </Label>
+                              <Label prefHeight="17.0" prefWidth="94.0" text="Rent ">
+                                 <FlowPane.margin>
+                                    <Insets bottom="10.0" left="5.0" right="10.0" top="5.0" />
+                                 </FlowPane.margin>
+                              </Label>
+                              <Label fx:id="totalRent" prefHeight="17.0" prefWidth="192.0" text="rent">
+                                 <FlowPane.margin>
+                                    <Insets bottom="10.0" left="5.0" right="10.0" top="5.0" />
+                                 </FlowPane.margin>
+                              </Label>
+                              <Label prefHeight="17.0" prefWidth="99.0" text="Commision">
+                                 <FlowPane.margin>
+                                    <Insets bottom="10.0" left="5.0" right="10.0" top="5.0" />
+                                 </FlowPane.margin>
+                              </Label>
+                              <Label fx:id="commission" prefHeight="17.0" prefWidth="115.0" text="commission">
+                                 <FlowPane.margin>
+                                    <Insets bottom="10.0" left="5.0" right="10.0" top="5.0" />
+                                 </FlowPane.margin>
+                              </Label>
+                           </children>
+                        </FlowPane>
+                     </children>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0" />
+               </children>
+            </HBox>
+         </center>
+         <right>
+            <HBox BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets top="10.0" />
+               </BorderPane.margin>
+               <children>
+                  <VBox>
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="98.0" text="Description:" />
+                        <Label fx:id="description" prefHeight="10.0" prefWidth="227.0" text="description">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox prefHeight="33.0" prefWidth="247.0">
+                           <children>
+                              <Label prefHeight="27.0" prefWidth="111.0" text="Driver Phone no#" />
+                              <Label fx:id="driverPhone" prefHeight="30.0" prefWidth="64.0" text="Label" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="17.0" prefWidth="247.0">
+                           <children>
+                              <Label prefHeight="17.0" prefWidth="119.0" text="Client phone no#" />
+                              <Label fx:id="clientPhone" prefHeight="17.0" prefWidth="66.0" text="Label" />
+                           </children>
+                        </HBox>
+                        <Label fx:id="officeNo" prefHeight="17.0" prefWidth="216.0" text="Office Number No#    03128137265">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </right>
+         <bottom>
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="BOTTOM_RIGHT" prefHeight="50.0" prefWidth="628.0">
+                     <children>
+                        <JFXButton fx:id="cancelbtn" layoutX="382.0" layoutY="40.0" onAction="#loadCancelAction" prefHeight="25.0" prefWidth="96.0" text="Close">
+                           <HBox.margin>
+                              <Insets bottom="30.0" left="10.0" right="30.0" top="30.0" />
+                           </HBox.margin>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

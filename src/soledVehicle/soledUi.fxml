@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="546.0" prefWidth="584.0" stylesheets="@../util/darkTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="soledVehicle.soledController">
+   <children>
+      <BorderPane prefHeight="546.0" prefWidth="415.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox prefHeight="400.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="17.0" prefWidth="629.0" text="Sale vehicle">
+                     <font>
+                        <Font name="Agency FB" size="47.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="Vno" labelFloat="true" promptText="Vehicle no#">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="40.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="saleTo" labelFloat="true" layoutX="10.0" layoutY="66.0" promptText="Sale to">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="40.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="pNic" labelFloat="true" layoutX="10.0" layoutY="91.0" promptText="purchaser NIC no#">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="40.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="Paddress" labelFloat="true" layoutX="10.0" layoutY="116.0" promptText="purchaser address">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="40.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="pPhone" labelFloat="true" layoutX="10.0" layoutY="141.0" promptText="purchaser phone no#">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="40.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextField fx:id="totalAmount" labelFloat="true" layoutX="10.0" layoutY="166.0" promptText="total amount">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="40.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <JFXTextArea fx:id="saleDescrption" labelFloat="true" promptText="Description">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="60.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </JFXTextArea>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" BorderPane.alignment="BOTTOM_CENTER">
+               <children>
+                  <JFXButton fx:id="salebtn" buttonType="RAISED" onAction="#loadSaleAction" prefHeight="25.0" prefWidth="105.0" text="Sale">
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="cancelbtn" buttonType="RAISED" layoutX="10.0" layoutY="10.0" onAction="#loadCancelAction" prefHeight="25.0" prefWidth="98.0" text="cancel">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

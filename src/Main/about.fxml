@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="460.0" prefWidth="600.0" stylesheets="@../util/darkTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.aboutController">
+   <children>
+      <VBox layoutX="83.0" layoutY="74.0" prefHeight="183.0" prefWidth="243.0">
+         <children>
+            <Label prefHeight="47.0" prefWidth="218.0" text="Muhammad Ahsan ">
+               <font>
+                  <Font name="Agency FB" size="34.0" />
+               </font>
+            </Label>
+            <Label prefHeight="46.0" prefWidth="207.0" text="mahsan.bscsf19@iba-suk.edu.pk">
+               <graphic>
+                  <FontAwesomeIconView glyphName="ENVELOPE" size="25" />
+               </graphic>
+            </Label>
+            <Label prefHeight="49.0" prefWidth="144.0" text="   03128137265">
+               <graphic>
+                  <FontAwesomeIconView glyphName="WHATSAPP" size="25" />
+               </graphic>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="205.0" layoutY="257.0" prefHeight="183.0" prefWidth="243.0">
+         <children>
+            <Label prefHeight="47.0" prefWidth="218.0" text="Komal ">
+               <font>
+                  <Font name="Agency FB" size="34.0" />
+               </font>
+            </Label>
+            <Label prefHeight="46.0" prefWidth="207.0" text="komal.kcsf19@iba-suk.edu.pk">
+               <graphic>
+                  <FontAwesomeIconView glyphName="ENVELOPE" size="25" />
+               </graphic>
+            </Label>
+            <Label prefHeight="49.0" prefWidth="144.0" text="     03138076941">
+               <graphic>
+                  <FontAwesomeIconView glyphName="WHATSAPP" size="25" />
+               </graphic>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="343.0" layoutY="74.0" prefHeight="183.0" prefWidth="243.0">
+         <children>
+            <Label prefHeight="47.0" prefWidth="218.0" text="Rajesh Kumar">
+               <font>
+                  <Font name="Agency FB" size="34.0" />
+               </font>
+            </Label>
+            <Label prefHeight="46.0" prefWidth="207.0" text=" rajesh.bscsf19@iba-suk.edu.pk">
+               <graphic>
+                  <FontAwesomeIconView glyphName="ENVELOPE" size="25" />
+               </graphic>
+            </Label>
+            <Label prefHeight="49.0" prefWidth="144.0" text="  03070275028">
+               <graphic>
+                  <FontAwesomeIconView glyphName="WHATSAPP" size="25" />
+               </graphic>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

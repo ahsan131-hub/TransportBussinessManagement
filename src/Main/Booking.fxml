@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" minHeight="0.0" minWidth="0.0" prefHeight="472.0" prefWidth="731.0" stylesheets="@../util/darkTheme.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.BookingController">
+   <children>
+      <VBox layoutX="-2.0" layoutY="7.0" prefHeight="472.0" prefWidth="719.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-17.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="133.0" prefWidth="739.0" text="Booking Section" textFill="#908686">
+               <font>
+                  <Font name="Agency FB" size="54.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER">
+               <children>
+                  <VBox>
+                     <children>
+                        <JFXButton fx:id="arrival" onAction="#loadArriveAction" prefHeight="25.0" prefWidth="80.0" text="Arrived">
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="refereshBtn" onAction="#loadRefreshAction" prefHeight="25.0" prefWidth="82.0" text="Refresh">
+                           <VBox.margin>
+                              <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <TableView fx:id="tableView" prefHeight="200.0" prefWidth="76.0">
+                    <columns>
+                      <TableColumn fx:id="noCol" prefWidth="75.0" text="Vehicle No#" />
+                    </columns>
+                     <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </HBox.margin>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" />
+            <HBox alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="bookingBtn" contentDisplay="TOP" onAction="#bookingAction" text="Book vehicle">
+                     <HBox.margin>
+                        <Insets left="30.0" right="20.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="GET_POCKET" size="45" />
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="receiptsList" contentDisplay="TOP" onAction="#receiptsListAcion" text="Receipts List">
+                     <HBox.margin>
+                        <Insets left="30.0" right="20.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <FontAwesomeIconView glyphName="LIST" size="45" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
